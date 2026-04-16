@@ -1,0 +1,66 @@
+{
+  "name": "scam-detector-mcp",
+  "description": "Scam and Fraud Detection for AI agents. Capabilities: instant scam check, phishing URL analysis, social engineering detection, sender verification, scam reporting. Built by MEOK AI Labs.",
+  "version": "1.0.0",
+  "tools": [
+    {
+      "name": "quick_check",
+      "description": "Paste any message, get instant scam probability score. No API key required.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "message": { "type": "string" }
+        },
+        "required": ["message"]
+      }
+    },
+    {
+      "name": "analyze_url",
+      "description": "Check a URL for phishing indicators and suspicious patterns.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "url": { "type": "string" },
+          "api_key": { "type": "string" }
+        },
+        "required": ["url"]
+      }
+    },
+    {
+      "name": "detect_social_engineering",
+      "description": "Detect manipulation tactics in conversations.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "conversation": { "type": "string" },
+          "api_key": { "type": "string" }
+        },
+        "required": ["conversation"]
+      }
+    },
+    {
+      "name": "verify_sender",
+      "description": "Check sender patterns against known scam vectors.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "email_or_phone": { "type": "string" },
+          "api_key": { "type": "string" }
+        },
+        "required": ["email_or_phone"]
+      }
+    },
+    {
+      "name": "report_scam",
+      "description": "Log and analyze a scam report.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "description": { "type": "string" },
+          "api_key": { "type": "string" }
+        },
+        "required": ["description"]
+      }
+    }
+  ]
+}

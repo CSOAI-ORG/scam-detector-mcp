@@ -1,0 +1,48 @@
+name: scam-detector-mcp
+description: 'Scam and Fraud Detection for AI agents. Capabilities: instant scam check,
+  phishing URL analysis, social engineering detection, sender verification, scam reporting.
+  Built by MEOK AI Labs.'
+version: 1.0.0
+tools:
+- name: quick_check
+  description: Paste any message, get instant scam probability score. No API key required.
+  parameters:
+  - name: message
+    type: string
+    required: true
+- name: analyze_url
+  description: Check a URL for phishing indicators and suspicious patterns.
+  parameters:
+  - name: url
+    type: string
+    required: true
+  - name: api_key
+    type: string
+    required: false
+- name: detect_social_engineering
+  description: Detect manipulation tactics in conversations.
+  parameters:
+  - name: conversation
+    type: string
+    required: true
+  - name: api_key
+    type: string
+    required: false
+- name: verify_sender
+  description: Check sender patterns against known scam vectors.
+  parameters:
+  - name: email_or_phone
+    type: string
+    required: true
+  - name: api_key
+    type: string
+    required: false
+- name: report_scam
+  description: Log and analyze a scam report.
+  parameters:
+  - name: description
+    type: string
+    required: true
+  - name: api_key
+    type: string
+    required: false
