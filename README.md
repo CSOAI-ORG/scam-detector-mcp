@@ -1,66 +1,38 @@
-# Scam Detector MCP Server
+<div align="center">
 
-By [MEOK AI Labs](https://meok.ai) | The only MCP server for scam and fraud detection.
+[![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/scam-detector-mcp)](https://github.com/CSOAI-ORG/scam-detector-mcp/stargazers)
 
-## Quick Start
+# uscamU detectorU mcp
+
+**By [MEOK AI Labs](https://meok.ai) | The only MCP server for scam and fraud detection.**
+
+[![npm version](https://img.shields.io/npm/v/@meok-ai/scam-detector-mcp)](https://www.npmjs.com/package/@meok-ai/scam-detector-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-255+_servers-purple)](https://meok.ai)
+
+[Installation](#installation) · [Docs](https://csoai.org) · [Report Bug](https://github.com/CSOAI-ORG/scam-detector-mcp/issues)
+
+</div>
+
+---
+
+## Installation
 
 ```bash
 pip install scam-detector-mcp
-scam-detector-mcp
+# or
+npm install -g @meok-ai/scam-detector-mcp
 ```
 
-Or run directly:
+## Quick Start
 
-```bash
-pip install mcp
-python server.py
-```
+See the project repository for full documentation and examples.
 
-## Claude Desktop Config
+## Enterprise Support
 
-Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
-
-```json
-{
-  "mcpServers": {
-    "scam-detector": {
-      "command": "scam-detector-mcp"
-    }
-  }
-}
-```
-
-## Tools
-
-| Tool | Description | API Key Required |
-|------|-------------|-----------------|
-| `quick_check` | Paste any message, get instant scam probability | No |
-| `analyze_url` | Check URL for phishing indicators | No (free tier) |
-| `detect_social_engineering` | Detect manipulation tactics in conversations | No (free tier) |
-| `verify_sender` | Check sender patterns against known scam vectors | No (free tier) |
-| `report_scam` | Log and analyze a scam report | No (free tier) |
-
-## Free Tier
-
-10 calls/day per tool, no API key required. Upgrade to Pro ($29/mo) for unlimited access at [meok.ai](https://meok.ai/mcp/scam-detector/pro).
-
-## Examples
-
-### Quick Check (zero config)
-```
-quick_check("URGENT: Your account has been suspended. Click here to verify your identity immediately or lose access.")
-```
-
-### Analyze URL
-```
-analyze_url("http://paypa1-security.xyz/login/verify")
-```
-
-### Detect Social Engineering
-```
-detect_social_engineering("Hi, I'm from your bank's fraud department. We've detected suspicious activity. I need your account number to verify your identity right away.")
-```
+- 📧 nicholas@csoai.org
+- 🌐 [CSOAI.org](https://csoai.org)
 
 ## License
 
-MIT - Built by [MEOK AI Labs](https://meok.ai)
+MIT © [CSOAI](https://csoai.org)
