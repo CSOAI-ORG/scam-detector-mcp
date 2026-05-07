@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "scam-detector-mcp"
-version = "1.0.3"
+version = "1.0.4"
 readme = "README.md"
 description = "Scam and fraud detection for AI agents. Instant scam check, phishing URL analysis, social engineering detection, sender verification, scam reporting. Zero-config free tier. Built by MEOK AI Labs."
 license = {file = "LICENSE"}
