@@ -1,3 +1,5 @@
+[![scam-detector-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/scam-detector-mcp/badges/card.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/scam-detector-mcp)
+
 <div align="center">
 
 [![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/scam-detector-mcp)](https://github.com/CSOAI-ORG/scam-detector-mcp/stargazers)
