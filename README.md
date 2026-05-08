@@ -1,45 +1,59 @@
-[![scam-detector-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/scam-detector-mcp/badges/score.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/scam-detector-mcp)
-[![MCP Registry](https://img.shields.io/badge/MCP_Registry-Published-green)](https://registry.modelcontextprotocol.io)
-[![PyPI](https://img.shields.io/pypi/v/scam-detector-mcp)](https://pypi.org/project/scam-detector-mcp/)
-
-[![scam-detector-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/scam-detector-mcp/badges/card.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/scam-detector-mcp)
-
 <div align="center">
 
-[![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/scam-detector-mcp)](https://github.com/CSOAI-ORG/scam-detector-mcp/stargazers)
+# Scam Detector MCP
 
-# uscamU detectorU mcp
+**MCP server for scam detector mcp operations**
 
-**By [MEOK AI Labs](https://meok.ai) | The only MCP server for scam and fraud detection.**
-
-[![npm version](https://img.shields.io/npm/v/@meok-ai/scam-detector-mcp)](https://www.npmjs.com/package/@meok-ai/scam-detector-mcp)
+[![PyPI](https://img.shields.io/pypi/v/meok-scam-detector-mcp)](https://pypi.org/project/meok-scam-detector-mcp/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-255+_servers-purple)](https://meok.ai)
-
-[Installation](#installation) · [Docs](https://csoai.org) · [Report Bug](https://github.com/CSOAI-ORG/scam-detector-mcp/issues)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-MCP_Server-purple)](https://meok.ai)
 
 </div>
 
----
+## Overview
+
+Scam Detector MCP provides AI-powered tools via the Model Context Protocol (MCP).
+
+## Tools
+
+| Tool | Description |
+|------|-------------|
+| `quick_check` | Paste any message (email, text, DM) -> instant scam probability score. No API ke |
+| `analyze_url` | Check a URL for phishing indicators and suspicious patterns. |
+| `detect_social_engineering` | Detect manipulation tactics (Cialdini's principles) in conversations. |
+| `verify_sender` | Check sender patterns against known scam vectors. |
+| `report_scam` | Log and analyze a scam report. Contributes to collective threat intelligence. |
 
 ## Installation
 
 ```bash
-pip install scam-detector-mcp
-# or
-npm install -g @meok-ai/scam-detector-mcp
+pip install meok-scam-detector-mcp
 ```
 
-## Quick Start
+## Usage with Claude Desktop
 
-See the project repository for full documentation and examples.
+Add to your Claude Desktop MCP config (`claude_desktop_config.json`):
 
-## Enterprise Support
+```json
+{
+  "mcpServers": {
+    "scam-detector-mcp": {
+      "command": "python",
+      "args": ["-m", "meok_scam_detector_mcp.server"]
+    }
+  }
+}
+```
 
-- 📧 nicholas@csoai.org
-- 🌐 [CSOAI.org](https://csoai.org)
+## Usage with FastMCP
+
+```python
+from mcp.server.fastmcp import FastMCP
+
+# This server exposes 5 tool(s) via MCP
+# See server.py for full implementation
+```
 
 ## License
 
-MIT © [CSOAI](https://csoai.org)
-<!-- mcp-name: io.github.CSOAI-ORG/scam-detector-mcp -->
+MIT © [MEOK AI Labs](https://meok.ai)
