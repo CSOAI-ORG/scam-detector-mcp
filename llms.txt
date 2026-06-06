@@ -1,0 +1,32 @@
+# Scam Detector MCP
+
+> By [MEOK AI Labs](https://meok
+
+`scam-detector-mcp` is a Model Context Protocol (MCP) server by MEOK AI Labs.
+
+## Install
+
+```bash
+pip install scam-detector-mcp
+```
+
+Or run without installing:
+
+```bash
+uvx scam-detector-mcp
+```
+
+## Tools
+
+- `quick_check` — Paste any message (email, text, DM) -> instant scam probability score. No API key required.
+- `analyze_url` — Check a URL for phishing indicators and suspicious patterns.
+- `detect_social_engineering` — Detect manipulation tactics (Cialdini's principles) in conversations.
+- `verify_sender` — Check sender patterns against known scam vectors.
+- `report_scam` — Log and analyze a scam report. Contributes to collective threat intelligence.
+
+## Links
+
+- Source: https://github.com/CSOAI-ORG/scam-detector-mcp
+- PyPI: https://pypi.org/project/scam-detector-mcp/
+- MEOK AI Labs: https://meok.ai
+- Council of AI: https://councilof.ai
