@@ -1,0 +1,23 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "scam-detector-mcp",
+    "description": "Scam Detector MCP Server by MEOK AI Labs",
+    "version": "1.0.9",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "scam-detector-mcp"
+      }
+    ],
+    "capabilities": [
+      "quick_check",
+      "analyze_url",
+      "detect_social_engineering",
+      "verify_sender",
+      "report_scam"
+    ]
+  }
+}

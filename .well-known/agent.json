@@ -1,0 +1,68 @@
+{
+  "name": "scam-detector-mcp",
+  "description": "Scam Detector MCP Server by MEOK AI Labs",
+  "url": "https://proofof.ai/scorecard/scam-detector-mcp.html",
+  "version": "1.0.9",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "quick_check",
+      "name": "Quick Check",
+      "description": "quick_check via scam-detector-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "analyze_url",
+      "name": "Analyze Url",
+      "description": "analyze_url via scam-detector-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "detect_social_engineering",
+      "name": "Detect Social Engineering",
+      "description": "detect_social_engineering via scam-detector-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "verify_sender",
+      "name": "Verify Sender",
+      "description": "verify_sender via scam-detector-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "report_scam",
+      "name": "Report Scam",
+      "description": "report_scam via scam-detector-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}
