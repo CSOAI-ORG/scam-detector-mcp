@@ -1,0 +1,9 @@
+# scam-detector-mcp - Auto-trigger Rules
+
+When the user asks about scam detector, use scam-detector-mcp tools: quick_check, analyze_url, detect_social_engineering, verify_sender, report_scam
+
+**MCP server for scam detector mcp operations**
+
+Install: `pip install scam-detector-mcp`
+
+By MEOK AI Labs — MIT licensed.

@@ -26,7 +26,6 @@ import sys, os
 _MEOK_API_KEY = _os.environ.get("MEOK_API_KEY", "")
 
 try:
-    sys.path.insert(0, os.path.expanduser("~/clawd/meok-labs-engine/shared"))
     from auth_middleware import check_access as _shared_check_access
     _AUTH_ENGINE_AVAILABLE = True
 except ImportError:
@@ -39,7 +38,7 @@ except ImportError:
             return True, "OK", "pro"
         if _MEOK_API_KEY and api_key and api_key != _MEOK_API_KEY:
             return False, "Invalid API key. Get one at https://meok.ai/api-keys", "free"
-        return True, "OK", "free"
+        return True, "OK, Pro at https://www.csoai.org/checkout", "free"
 
 
 def check_access(api_key=""):
@@ -436,7 +435,7 @@ def analyze_url(
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
     limit_err = _check_rate_limit("analyze_url", tier)
     if limit_err:
         return {"error": "rate_limited", "message": limit_err}
@@ -593,7 +592,7 @@ def detect_social_engineering(
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
     limit_err = _check_rate_limit("social_engineering", tier)
     if limit_err:
         return {"error": "rate_limited", "message": limit_err}
@@ -707,7 +706,7 @@ def verify_sender(
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
     limit_err = _check_rate_limit("verify_sender", tier)
     if limit_err:
         return {"error": "rate_limited", "message": limit_err}
@@ -894,7 +893,7 @@ def report_scam(
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
     limit_err = _check_rate_limit("report_scam", tier)
     if limit_err:
         return {"error": "rate_limited", "message": limit_err}

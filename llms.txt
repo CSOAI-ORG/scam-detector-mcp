@@ -1,32 +1,36 @@
-# Scam Detector MCP
-
-> By [MEOK AI Labs](https://meok
-
-`scam-detector-mcp` is a Model Context Protocol (MCP) server by MEOK AI Labs.
+# scam-detector-mcp
+# **MCP server for scam detector mcp operations**
 
 ## Install
-
 ```bash
 pip install scam-detector-mcp
 ```
 
-Or run without installing:
-
-```bash
-uvx scam-detector-mcp
-```
+## Auth & Rate Limits
+- Free tier: 10 calls/day. No API key required.
+- Pro tier (£79/mo): unlimited + signed attestations.
+- Enterprise (£1,499/mo): white-label.
 
 ## Tools
 
-- `quick_check` — Paste any message (email, text, DM) -> instant scam probability score. No API key required.
-- `analyze_url` — Check a URL for phishing indicators and suspicious patterns.
-- `detect_social_engineering` — Detect manipulation tactics (Cialdini's principles) in conversations.
-- `verify_sender` — Check sender patterns against known scam vectors.
-- `report_scam` — Log and analyze a scam report. Contributes to collective threat intelligence.
+### `quick_check`
+Paste any message (email, text, DM) -> instant scam probability score. No API key required.
 
-## Links
+### `analyze_url`
+Check a URL for phishing indicators and suspicious patterns.
 
-- Source: https://github.com/CSOAI-ORG/scam-detector-mcp
-- PyPI: https://pypi.org/project/scam-detector-mcp/
-- MEOK AI Labs: https://meok.ai
-- Council of AI: https://councilof.ai
+### `detect_social_engineering`
+Detect manipulation tactics (Cialdini's principles) in conversations.
+
+### `verify_sender`
+Check sender patterns against known scam vectors.
+
+### `report_scam`
+Log and analyze a scam report. Contributes to collective threat intelligence.
+
+
+## Maintainer
+MEOK AI Labs · hello@meok.ai · https://meok.ai · MIT licensed
+
+## Pairs with
+Governance moat: pair this tool with any of MEOK's 38 governance MCPs (EU AI Act, DORA, NIS2, CRA, GDPR, ISO 42001, etc.) for full compliance coverage.

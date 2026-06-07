@@ -1,0 +1,28 @@
+{
+  "name": "scam-detector-mcp",
+  "title": "Scam Detector Mcp",
+  "description": "Scam and fraud detection for AI agents. Instant scam check, phishing URL analysis, social engineering detection, sender verification, scam reporting. Zero-config free tier. Built by MEOK AI Labs.",
+  "version": "1.0.9",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "quick_check"
+    },
+    {
+      "name": "analyze_url"
+    },
+    {
+      "name": "detect_social_engineering"
+    },
+    {
+      "name": "verify_sender"
+    },
+    {
+      "name": "report_scam"
+    }
+  ]
+}
