@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "scam-detector-mcp"
-version = "1.0.9"
+version = "1.0.11"
 readme = "README.md"
 description = "Scam and fraud detection for AI agents. Instant scam check, phishing URL analysis, social engineering detection, sender verification, scam reporting. Zero-config free tier. Built by MEOK AI Labs."
 license = {file = "LICENSE"}
@@ -25,7 +25,7 @@ Repository = "https://github.com/CSOAI-ORG/scam-detector-mcp"
 
 [tool.hatch.build.targets.wheel]
 packages = ["."]
-only-include = ["server.py"]
+only-include = ["auth_middleware.py", "server.py"]
 
 [project.scripts]
 scam-detector-mcp = "server:main"
