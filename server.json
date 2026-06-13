@@ -4,9 +4,8 @@
   "version": "1.0.11",
   "description": "Scam Detector MCP Server by MEOK AI Labs",
   "repository": {
-    "type": "git",
     "url": "https://github.com/CSOAI-ORG/scam-detector-mcp",
-    "source": "https://github.com/CSOAI-ORG/scam-detector-mcp"
+    "source": "github"
   },
   "packages": [
     {
